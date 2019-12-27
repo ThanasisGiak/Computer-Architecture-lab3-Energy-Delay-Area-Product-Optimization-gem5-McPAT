@@ -99,37 +99,38 @@ Ef(ARM_A9)=(Runtime Dynamic) * exec_time_ARM_A9 + Total Leakage * idle_mode_time
 
 #### Area-Level 2 cache size
 
-![](/home/uglynick/thmmy/arxitektoniki/lab_3/Graphs/AL2s.png) 
+![AL2s](https://user-images.githubusercontent.com/57605047/71524643-0c707e00-28d7-11ea-8c16-5c8676f54406.png) 
 
 Από το διάγραμμα αυτό που παρατηρούμε είναι ότι όσο αυξάνουμε το μέγεθος της Level 2 cache τόσο μεγαλώνει και το μέγεθος του Area.
 
 #### Peak Power-Level 2 cache size
 
-![](/home/uglynick/thmmy/arxitektoniki/lab_3/Graphs/PL2s.png) 
+![PL2s](https://user-images.githubusercontent.com/57605047/71524681-3e81e000-28d7-11ea-8018-64c26f702ee8.png)
 
 Και στο Peak Power βλέπουμε αύξηση όσο μεγαλώνει το μέγεθος της Level 2 cache.
 
 #### Area-Level 2 cache associativity
 
-![](/home/uglynick/thmmy/arxitektoniki/lab_3/Graphs/AL2a.png) 
+![AL2a](https://user-images.githubusercontent.com/57605047/71524697-50fc1980-28d7-11ea-8bba-7fd6055dd964.png)
 
 Τα αποτελέσματα που βλέπουμε εδώ διαφέρουν από τα προηγούμενα δίοτι βλέπουμε ότι το Area είναι μικρότερο όταν Level 2 cache associativity είναι ίσο με 8.Αυτό πιστεύουμε ότι συνδέεται με το γεγονός ότι το μέγεθος της L2 cache είναι ορισμένο by default στα 2ΜΒ.
 
 #### Peak Power-Level 2 cache associativity
 
-![](/home/uglynick/thmmy/arxitektoniki/lab_3/Graphs/PL2a.png) 
+![PL2a](https://user-images.githubusercontent.com/57605047/71524715-70934200-28d7-11ea-8a47-c4e204ab166e.png)
 
 Σε αυτό το διάγραμμα βλέπουμε ότι η αλλάγη στο Level 2 cache associativity δεν επηρέαζει την τιμή του Peak Power παρα μόνο σε πολύ μικρό βαθμό κάτι που είναι αναμενόμενο αφού από άποψη υλικού μέσα στον επεξεργαστή δεν αλλάζουν πολλά πράγματα όσο μεγαλώνουμε το associativity.
 
 #### Area-Cache line size
 
-![](/home/uglynick/thmmy/arxitektoniki/lab_3/Graphs/ACls.png) 
+![ACls](https://user-images.githubusercontent.com/57605047/71524735-886ac600-28d7-11ea-81e7-388375c82705.png)
+ 
 
 Βλέπουμε ότι η αύξηση του cache line size από 64 bytes σε 128 bytes προκαλεί τεράστια αύξηση στην τιμή του Area ενώ στην αλλάγη από 32 bytes σε 64 bytes δεν παρατηρούμε ανάλογη αύξηση.
 
 #### Peak Power-Cache line size
 
-![](/home/uglynick/thmmy/arxitektoniki/lab_3/Graphs/PCls.png) 
+![PCls](https://user-images.githubusercontent.com/57605047/71524758-a0dae080-28d7-11ea-903f-c7b3fe3df20b.png)
 
 Εδώ βλέπουμε ότι ο όρος Peak Power όταν αυξάνουμε το cache line size από 32 bytes σε 64 bytes μεγαλώνει κατα 25% και όταν το αυξάνουμε από 64 bytes σε 128 bytes υπερδιπλασιάζεται.
 
@@ -147,62 +148,62 @@ Ef(ARM_A9)=(Runtime Dynamic) * exec_time_ARM_A9 + Total Leakage * idle_mode_time
 
 **2. 429.mcf**
 
-**Level 2 cache size**1MB
+**Level 2 cache size** 1MB
 
-**Level 2 cache associativity**8
+**Level 2 cache associativity** 8
 
-**Cache line size**32bytes
+**Cache line size** 32bytes
 
 **3. 456.hmmer**
 
-**Level 2 cache size**1MB
+**Level 2 cache size** 1MB
 
-**Level 2 cache associativity**8
+**Level 2 cache associativity** 8
 
-**Cache line size**32bytes
+**Cache line size** 32bytes
 
 **4. 458.sjeng**
 
-**Level 2 cache size**1MB
+**Level 2 cache size** 1MB
 
-**Level 2 cache associativity**8
+**Level 2 cache associativity** 8
 
-**Cache line size**64bytes
+**Cache line size** 64bytes
 
 **5. 470.libm**
 
-**Level 2 cache size**1MB
+**Level 2 cache size** 1MB
 
-**Level 2 cache associativity**8
+**Level 2 cache associativity** 8
 
-**Cache line size**64bytes
+**Cache line size** 64bytes
 
 Συνολικά η καλύτερη λύση που έχουμε να προτείνουμε είναι η παρακάτω:
 
-**Level 2 cache size**1MB
+**Level 2 cache size** 1MB
 
-**Level 2 cache associativity**8
+**Level 2 cache associativity** 8
 
-**Cache line size**64bytes
+**Cache line size** 64bytes
 
 Για το μέγεθος της Level 2 cache το 1ΜΒ είναι η καλύτερη λύση για όλα τα benchmarks.Επιλέξαμε το associativity της Level 2 cache να είναι 8 επειδή και πάλι είναι η καλύτερη λύση για όλα τα benchmarks.Τέλος,θεωρούμε ότι το cache line size πρέπει να είναι 64bytes,αν και στα τρία πρώτα benchmarks η βέλτιστη λύση είναι τα 32bytes,επειδή βλέπουμε ότι στα 32 bytes το γινόμενο EDAP μεγαλώνει σε πολύ μεγαλύτερο βαθμό στα benchmarks 470.libm και 458.sjeng από οτι στα υπόλοιπα benchmarks αν ορίσουμε το cache line size στα 64 bytes.
 
 Σχετικά,με τα αποτελέσματα που προέκυψαν από την 2η Εργασία βλέπουμε ότι μελετώντας της τιμές που σχετίζονται με την Level 2 cache με γνώμονα το γινόμενο EDAP διαφέρουν πολύ από αυτές που βγάλαμε μέσω της συνάρτησης κόστους που είχαμε προτείνει.Πιο συγκεκριμένα:
 
-**1.**Για το μέγεθος της cache στην 2η Εργασία είχαμε προτείνει τα 256Κb ενώ τώρα βρήκαμε ως καλύτερη το 1MB.Βέβαια,δεν τρέξαμε τον McPAT για 256Kb και βλέποντας το διάγραμμα από το 2ο Ερώτημα θεωρούμε ότι αυτή θα προέκυπτε ως βέλτιστη λύση σε σχέση με το γινόμενο EDAP.
+**1.** Για το μέγεθος της cache στην 2η Εργασία είχαμε προτείνει τα 256Κb ενώ τώρα βρήκαμε ως καλύτερη το 1MB.Βέβαια,δεν τρέξαμε τον McPAT για 256Kb και βλέποντας το διάγραμμα από το 2ο Ερώτημα θεωρούμε ότι αυτή θα προέκυπτε ως βέλτιστη λύση σε σχέση με το γινόμενο EDAP.
 
-**2.**Για το associativity στην 2η Εργασία είχαμε δώσει ως βέλτιστη λύση την 2-way set associative cache ενώ εδώ προκύπτει ως καλύτερη λύση η 8-way set associative.
+**2.** Για το associativity στην 2η Εργασία είχαμε δώσει ως βέλτιστη λύση την 2-way set associative cache ενώ εδώ προκύπτει ως καλύτερη λύση η 8-way set associative.
 
-**3.**Για το μέγεθος της cache line size είχαμε προτείνει τα 128bytes κάτι που βλέπουμε ότι αυξάνει σε τεράστιο βαθμό το γινόμενο EDAP.Οπότε,ως λύση σε αυτήν την εργασία προτείναμε τα 64 bytes.
+**3.** Για το μέγεθος της cache line size είχαμε προτείνει τα 128bytes κάτι που βλέπουμε ότι αυξάνει σε τεράστιο βαθμό το γινόμενο EDAP.Οπότε,ως λύση σε αυτήν την εργασία προτείναμε τα 64 bytes.
 
 Συνολικά,η καλύτερη λύση και για τις δύο εργασίες προκύπτει ανάλογα με βάση με ποιον παράγοντα επιλέγει ο κάθε αρχιτέκτονας ως σημαντικότερο(απόδοση,κόστος,EDAP).Εμείς μία λύση που έχουμε να προτείνουμε μελετώντας εποπτικά τα αποτελέσματα των δύο εργασιών είναι η παρακάτω:
 
 
-**Level 2 cache size**256Kb
+**Level 2 cache size** 256Kb
 
-**Level 2 cache associativity**8
+**Level 2 cache associativity** 8
 
-**Cache line size**64bytes
+**Cache line size** 64bytes
 
 
 #### Λίγα λόγια από εμάς
