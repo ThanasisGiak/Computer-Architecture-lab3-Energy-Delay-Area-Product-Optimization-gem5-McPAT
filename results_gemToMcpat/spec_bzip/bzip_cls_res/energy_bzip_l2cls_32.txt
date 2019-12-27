@@ -1,0 +1,4 @@
+Reading simulation time from: /home/uglynick/my_mcpat/mcpat/results_gemToMcpat/spec_bzip/bzip_cls_res/bzip_cls_32.txt
+Reading simulation time from: /home/uglynick/my_gem5/spec_results/specbzip_1GHz/results_clz_32/stats.txt
+leakage: 0.845989 W, dynamic: 0.195686 W and runtime: 0.171882 sec
+energy is 179.045182 mJ

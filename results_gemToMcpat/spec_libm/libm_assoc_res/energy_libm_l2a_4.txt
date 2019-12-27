@@ -1,0 +1,4 @@
+Reading simulation time from: /home/uglynick/my_mcpat/mcpat/results_gemToMcpat/spec_libm/libm_assoc_res/libm_l2a_4.txt
+Reading simulation time from: /home/uglynick/my_gem5/spec_results/speclibm_1GHz/results_l2_assoc_4/stats.txt
+leakage: 1.153220 W, dynamic: 0.268770 W and runtime: 0.262355 sec
+energy is 373.066186 mJ

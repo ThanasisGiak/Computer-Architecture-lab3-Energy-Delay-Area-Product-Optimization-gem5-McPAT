@@ -1,0 +1,4 @@
+Reading simulation time from: /home/uglynick/my_mcpat/mcpat/results_gemToMcpat/spec_hmmer/hmmer_assoc_res/hmmer_l2a_4.txt
+Reading simulation time from: /home/uglynick/my_gem5/spec_results/spechmmer_1GHz/results_l2_assoc_4/stats.txt
+leakage: 1.153220 W, dynamic: 0.403532 W and runtime: 0.118453 sec
+energy is 184.401945 mJ

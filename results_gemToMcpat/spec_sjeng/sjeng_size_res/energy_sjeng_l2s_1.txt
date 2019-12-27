@@ -1,0 +1,4 @@
+Reading simulation time from: /home/uglynick/my_mcpat/mcpat/results_gemToMcpat/spec_sjeng/sjeng_size_res/sjeng_l2s_1.txt
+Reading simulation time from: /home/uglynick/my_gem5/spec_results/specsjeng_1GHz/sj_results_l2_1MB/stats.txt
+leakage: 1.151160 W, dynamic: 0.214898 W and runtime: 0.704119 sec
+energy is 961.867393 mJ

@@ -1,0 +1,4 @@
+Reading simulation time from: /home/uglynick/my_mcpat/mcpat/results_gemToMcpat/spec_mcf/mcf_assoc_res/mcf_l2a_4.txt
+Reading simulation time from: /home/uglynick/my_gem5/spec_results/specmcf_1GHz/results_l2_assoc_4/stats.txt
+leakage: 1.153220 W, dynamic: 0.380587 W and runtime: 0.109131 sec
+energy is 167.385892 mJ
